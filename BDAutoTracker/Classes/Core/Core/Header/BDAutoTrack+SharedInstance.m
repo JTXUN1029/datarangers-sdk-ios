@@ -70,6 +70,14 @@ static BDAutoTrackRequestHostBlock storedRequestHostBlock = nil;
     return track.userUniqueID;
 }
 
++ (BOOL)eventReportingEnabled {
+    return track.eventReportingEnabled;
+}
+
++ (void)setEventReportingEnabled:(BOOL)eventReportingEnabled {
+    track.eventReportingEnabled = eventReportingEnabled;
+}
+
 #pragma mark - public method
 + (void)setUserAgent:(NSString *)userAgent {
     [track setUserAgent:userAgent];

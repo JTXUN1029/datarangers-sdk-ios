@@ -199,6 +199,7 @@ static id<BDAutoTrackEncryptionDelegate> gEncryptor;
         self.ignoredPageClasses = [NSMutableSet new];
         self.ignoredClickViewClasses = [NSMutableSet new];
         self.started = NO;
+        self.eventReportingEnabled = NO;
         
         NSString *appID = config.appID;
         NSString *queueName = [NSString stringWithFormat:@"com.applog.track_%@", appID];

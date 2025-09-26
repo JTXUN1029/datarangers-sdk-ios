@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (class, nonatomic, copy, readonly) NSString *appID;
 
+@property (class, nonatomic, assign) BOOL eventReportingEnabled;
+
 #pragma mark - 初始化与启动单例
 
 + (void)startTrackWithConfig:(BDAutoTrackConfig *)config;

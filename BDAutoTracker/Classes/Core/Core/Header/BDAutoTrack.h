@@ -30,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy, readonly) NSString *appID;
 
+@property (nonatomic, assign) BOOL eventReportingEnabled;
 
 + (NSString *)SDKVersion;
 
